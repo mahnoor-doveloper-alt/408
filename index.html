@@ -15,10 +15,175 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+   
     
+
+
+
+
+
+
+
+
+
+
+    <style>
+
+
+
+
+        /* General Section Styling */
+section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  color: #333; /* Default text color for light mode */
+}
+
+/* Section Title Styling (Centered and Stylish) */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+/* BuffGraphics Specific Section Styling */
+.buffgraphics-section {
+  margin-top: 40px;
+}
+
+.internship-projects-section {
+  margin-top: 50px;
+}
+
+/* Project Box Styling */
+.project-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.image-container {
+  height: 250px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+.project-details {
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.project-details h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-details p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  section {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+  }
+
+  .section-title {
+    color: #fff; /* Light color for titles */
+  }
+
+  .project-box {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+  }
+
+  .project-details {
+    background-color: #444; /* Dark background for project details */
+  }
+
+  .project-details h4 {
+    color: #fff; /* White text for project titles */
+  }
+
+  .project-details p {
+    color: #ccc; /* Light text color for descriptions */
+  }
+
+  .project-link {
+    color: #00aaff; /* Adjust link color for dark mode */
+  }
+
+  .project-link:hover {
+    color: #66c2ff; /* Lighter hover color */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-details h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.circle-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    </style>
 <!--
 
-Tooplate 2115 Marvel
+
 
 https://www.tooplate.com/view/2115-marvel
 
@@ -44,7 +209,7 @@ https://www.tooplate.com/view/2115-marvel
                         <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                        <a href="#buffgraphics-section" class="nav-link"><span data-hover="projects">Projects</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
@@ -54,14 +219,7 @@ https://www.tooplate.com/view/2115-marvel
                     </li>
                 </ul>
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
-                    </div>
-                </ul>
+                
             </div>
         </div>
     </nav>
@@ -98,16 +256,16 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
 
                 <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images/project/FRONT END DEVELOPER (3).png" class="img-fluid" alt="svg image">
-                    </div>
+                  <div class="about-image">
+                    <img src="images/project/22.png" class="circle-image" alt="Profile Image">
+                  </div>
                 </div>
-
+                
             </div>
         </div>
     </section>
     <!-- BuffGraphics Section -->
-<section class="buffgraphics-section">
+<section class="buffgraphics-section" id ="buffgraphics-section">
     <div class="container">
       <h2 class="section-title">BuffGraphics Project</h2>
       <div class="row justify-content-center">
@@ -119,7 +277,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="project-details">
               <h4>BuffGraphics</h4>
               <p>Project done using HTML, CSS, and JavaScript. A creative design showcasing BuffGraphics.</p>
-              <a href=" https://mahnoor-doveloper-alt.github.io/mmm/" class="project-link">View Project</a>
+              <a href="https://mahnoor-doveloper-alt.github.io/mmm/" class="project-link">View Project</a>
             </div>
           </div>
         </div>
@@ -154,7 +312,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="project-details">
               <h4>E-commerce Homepage</h4>
               <p>Developed using HTML, CSS, and JavaScript.</p>
-              <a href=" https://mahnoor-doveloper-alt.github.io/MYWEBPAGE/" class="project-link">View Project</a>
+              <a href="https://mahnoor-doveloper-alt.github.io/MYWEBPAGE/" class="project-link">View Project</a>
             </div>
           </div>
         </div>
@@ -167,17 +325,38 @@ https://www.tooplate.com/view/2115-marvel
             <div class="project-details">
               <h4>Blog Homepage</h4>
               <p>Built with HTML, CSS, and JavaScript.</p>
-              <a href=" https://mahnoor-doveloper-alt.github.io/MYWEBPAGE/" class="project-link">View Project</a>
+              <a href="https://mahnoor-doveloper-alt.github.io/MYWEBPAGE/" class="project-link">View Project</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="internship-projects-section">
+    <div class="container">
+      <h2 class="section-title">My Internship Projects</h2>
+      <div class="row justify-content-center">
+        
+        <!-- Project 1 -->
+        <div class="col-lg-5 col-md-6 mb-4">
+          <div class="project-box">
+            <div class="image-container">
+              <img src="images/project/2014.png" alt="Personal Portfolio" class="project-image">
+            </div>
+            <div class="project-details">
+              <h4>Clone Copy of Onepage Bootstrap Template</h4>
+              <p>Created using HTML, CSS, and JavaScript.</p>
+              <a href="https://mahnoor-doveloper-alt.github.io/onepsge/" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
   
-  
+       
+  </section>
   
 
+  
     <!-- FEATURES -->
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
         <div class="container">
@@ -193,9 +372,14 @@ https://www.tooplate.com/view/2115-marvel
                              </div>
                              <div class="timeline-info">
                                   <h3><span>Web Development (3+ mouth Experience)</span><small></small></h3>
-                                  <p> have been working as a front-end web developer for over a mouths, specializing in 
-                                    HTML, CSS, and Bootstrap. I create responsive, modern, 
-                                    and user-friendly websites for businesses and personal projects.😊.</p>
+                                  <p>
+                                    I have been working as a Front-End Web Developer for over three months, 
+                                    including a valuable internship experience. During this time, 
+                                    I’ve specialized in HTML, CSS, Bootstrap, and JavaScript. I create 
+                                    responsive, modern, and user-friendly websites for businesses and 
+                                    personal projects, focusing on clean design and seamless functionality.
+                                </p>
+                                
                              </div>
                         </div>
 
@@ -283,7 +467,8 @@ https://www.tooplate.com/view/2115-marvel
           
           <div class="col-lg-5 mr-lg-5 col-12">
             <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.23608997832!2d73.3900!3d33.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfbfbfbfbfbf%3A0x5d3e3e3e3e3e3e3e!2sMurree%2C%20Pakistan!5e0!3m2!1sen!2s!4v1620000000000" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
             </div>
 
             <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
